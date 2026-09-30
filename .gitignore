@@ -1,0 +1,13 @@
+# Binarios compilados
+*.o
+*.out
+emisor
+receptor
+
+# Docker
+*.log
+
+# Editores
+.vscode/
+*.swp
+*~
