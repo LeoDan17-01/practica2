@@ -18,12 +18,12 @@ para compilar ambos archivos (receptor.c y emisor.c) para despues con ayuda de d
 ### 2. Creamos la red virtual 
 `docker network create practica2redes`
 
-### 3. Receptor
+### 3. Receptor (esto en terminal 1)
 `docker run -it --rm --name receptor --network redes2027 \
   --cap-add=NET_RAW capa2 ./receptor`
 
-### 4. Emisor (desde otra terminal)
+### 4. Emisor (desde otra terminal o terminal 2)
 `docker run -it --rm --name emisor --network redes2027 \
   --cap-add=NET_RAW capa2 ./emisor`
 
-### Procedemos a enviar un mensaje y se puede observar desde la primera terminal
+### Procedemos a enviar un mensaje (en terminal 2) y se puede observar desde la primera terminal (terminal 1)
